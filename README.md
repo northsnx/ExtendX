@@ -38,6 +38,6 @@
 
 | สมาชิก (Member) | GitHub |
 |------------------|--------|
-| ![northsnx](https://img2.pic.in.th/pic/northsnx.png) <br> **northsnx** | [GitHub/northsnx](https://github.com/northsnx) |
-| ![LAKE](https://img2.pic.in.th/pic/AllyLake.png) <br> **LAKE** | [GitHub/Lrfith](https://github.com/Lrfith) |
+| **northsnx** | [GitHub/northsnx](https://github.com/northsnx) |
+| **LAKE** | [GitHub/Lrfith](https://github.com/Lrfith) |
 
