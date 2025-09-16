@@ -1,0 +1,403 @@
+/* ========== Reset & Base ========== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  background: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* ========== Navbar ========== */
+.nav-bar {
+  background: #1b1b1b;
+  color: #fff;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 60px;
+}
+
+.nav-link {
+  color: #ccc;
+  font-size: 1em;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+/* ========== Intro Section ========== */
+.intro-section {
+  position: relative;
+  padding: 128px 10px;
+  color: #fff;
+  background: url("https://img5.pic.in.th/file/secure-sv1/ChatGPT-Image-3-..-2568-16_16_43.png") center/cover no-repeat;
+  text-align: left;
+}
+
+.intro-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.intro-section>* {
+  position: relative;
+  z-index: 1;
+}
+
+.intro-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.intro-logo {
+  height: 300px;
+}
+
+.intro-right h1 {
+  font-size: 4em;
+}
+
+.intro-th {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.intro-en {
+  font-size: 1.5rem;
+  color: #cfcfcf;
+}
+
+/* ========== Content Section ========== */
+.content-section {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  margin: 40px auto;
+}
+
+.content-section h2,
+.team-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.content-section h3,
+.team-section h3 {
+  font-size: 1.5rem;
+  margin: 30px 0 10px;
+}
+
+/* ========== Cards ========== */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card,
+.team-card {
+  background: #e9e9e9;
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  height: 320px;
+  object-fit: contain;
+}
+
+.team-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+}
+
+.team-card img {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ========== Button ========== */
+.click {
+  background: #459bec;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.click:hover {
+  background: #1d578d;
+  transform: scale(1.05);
+}
+
+/* ========== Features List ========== */
+.features-list {
+  list-style: none;
+  margin-top: 10px;
+  color: #444;
+}
+
+.features-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.features-list li strong {
+  color: #459bec;
+}
+
+/* ========== Team Section ========== */
+.team-section {
+  background: #505050;
+  padding: 40px 0;
+  color: #fff;
+}
+
+.team-section h3 {
+  color: black;
+}
+
+/* CSS สำหรับซ่อน element */
+.hidden {
+  display: none;
+}
+
+/* Style สำหรับปุ่มเลือกภาษา */
+.lang-switcher {
+  display: flex;
+  gap: 10px;
+}
+
+.lang-btn {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.lang-btn:hover {
+  background-color: #fff;
+  color: #1b1b1b;
+}
+
+.lang-btn.active {
+  background-color: #459bec;
+  border-color: #459bec;
+  color: #fff;
+}
+
+/* ========== Footer ========== */
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #202020;
+  color: #fff;
+  font-size: 1em;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* ======================================== */
+/* ========== Responsive Styles ========== */
+/* ======================================== */
+
+/* ========== For Tablets (<= 768px) ========== */
+@media (max-width: 768px) {
+  /* === Layout & Spacing === */
+  .container {
+    padding: 0 20px; /* ปรับ padding ด้านข้างสำหรับ container หลัก */
+  }
+
+  .intro-section {
+    padding: 80px 20px; /* ลด padding ส่วน Intro */
+    text-align: center;
+  }
+
+  .intro-grid {
+    flex-direction: column; /* จัดเรียงโลโก้กับข้อความในแนวตั้ง */
+    gap: 30px;
+  }
+  
+  .content-section {
+    padding: 25px; /* ลด padding ของส่วนเนื้อหา */
+    margin: 30px auto; /* ลด margin บน-ล่าง */
+  }
+
+  /* === Typography === */
+  .intro-right h1 {
+    font-size: 3em; /* ลดขนาดฟอนต์หัวข้อใหญ่ */
+  }
+
+  .intro-th {
+    font-size: 1.5rem;
+  }
+
+  .intro-en {
+    font-size: 1.2rem;
+  }
+  
+  .content-section h2, .team-section h2 {
+    font-size: 1.8rem;
+  }
+
+  /* === Elements & Images === */
+  .nav-logo {
+    height: 50px; /* ลดขนาดโลโก้ที่ Navbar */
+  }
+
+  .intro-logo {
+    height: 200px;
+  }
+  
+  .team-card {
+    text-align: center;
+    gap: 15px;
+  }
+
+  .team-card img {
+    width: 120px; /* ปรับขนาดรูปทีมให้พอดี */
+    height: 120px;
+  }
+}
+
+
+/* ========== For Mobile Phones (<= 480px) ========== */
+@media (max-width: 480px) {
+  /* === General Typography === */
+  body {
+    font-size: 14px; /* ปรับขนาดฟอนต์พื้นฐานให้เล็กลงอีก */
+  }
+
+  .container {
+    padding: 15px 20px; /* ลด padding ด้านข้างอีกสำหรับจอที่แคบมากๆ */
+  }
+
+  /* === Navbar === */
+  .nav-logo {
+    height: 40px;
+  }
+
+  .nav-link {
+    font-size: 0.8em;
+  }
+
+  /* === Intro Section === */
+  .intro-section {
+    padding: 60px 15px; /* ลด padding ลงอีก */
+  }
+
+  .intro-logo {
+    height: 150px;
+  }
+
+  .intro-right h1 {
+    font-size: 2.2em; /* ลดขนาดฟอนต์สำหรับมือถือ */
+  }
+
+  .intro-th {
+    font-size: 1.2rem;
+  }
+
+  .intro-en {
+    font-size: 1rem;
+  }
+
+  /* === Content & Sections === */
+  .content-section, .team-section {
+    padding: 20px 25px;
+  }
+
+  .content-section h2, .team-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .content-section h3, .team-section h3 {
+    font-size: 1.0rem;
+  }
+
+  /* === Cards === */
+  .card-grid {
+    flex-direction: column; /* บังคับให้ card ทุกใบเรียงเป็นแนวตั้ง */
+    
+  }
+
+  .card img {
+    height: auto;
+    max-height: 220px;
+  }
+
+  .team-card img {
+    width: 100px; /* ปรับขนาดรูปทีมให้เล็กลง */
+    height: 100px;
+  }
+
+  /* === Coming Soon Image === */
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* === Buttons === */
+  .click, .lang-btn {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+}
